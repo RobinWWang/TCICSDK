@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                       腾讯云互动教育极简单接入SaaS方案
                    DESC
-  s.homepage     = "https://github.com/tonychanchen/TCICSDK"
+  s.homepage     = "https://github.com/RobinWWang/TCICSDK"
   s.license      = "MIT"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = "eagleychen"
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 #  }
 
 
-  s.source       = { :git => "https://github.com/tonychanchen/TCICSDK.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/RobinWWang/TCICSDK.git", :tag => "v#{s.version}" }
   
   s.resource = 'tcicimage.bundle'
   s.vendored_frameworks = 'TCICSDK.framework'
@@ -33,11 +33,13 @@ Pod::Spec.new do |s|
   s.dependency 'TIWCache_iOS'
   s.dependency 'TXLiteAVSDK_Professional'
   
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-                            'GENERATE_INFOPLIST_FILE' => 'YES'
-}
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-                             'GENERATE_INFOPLIST_FILE' => 'YES'
-}
+  s.pod_target_xcconfig = { 
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+    'GENERATE_INFOPLIST_FILE' => 'YES'
+  }
+  s.user_target_xcconfig = { 
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+    'GENERATE_INFOPLIST_FILE' => 'YES'
+  }
   
 end
