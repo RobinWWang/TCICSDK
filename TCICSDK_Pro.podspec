@@ -22,24 +22,24 @@ Pod::Spec.new do |s|
 
 
   s.source       = { :git => "https://github.com/RobinWWang/TCICSDK.git", :tag => "v#{s.version}" }
-  
+
   s.resource = 'tcicimage.bundle'
   s.vendored_frameworks = 'TCICSDK.framework'
   s.frameworks = 'Foundation', 'Accelerate'
   s.dependency 'Masonry'
   s.dependency 'YYModel'
   s.dependency 'Bugly'
-  s.dependency 'TIWLogger_iOS'
-  s.dependency 'TIWCache_iOS'
-  s.dependency 'TXLiteAVSDK_Professional'
-  
-  s.pod_target_xcconfig = { 
+  s.dependency 'TIWLogger_iOS', '1.0.1.73'
+  s.dependency 'TIWCache_iOS', '2.0.0.120'
+  s.dependency 'TXLiteAVSDK_Professional', '11.4.14552'
+
+  s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'GENERATE_INFOPLIST_FILE' => 'YES'
   }
-  s.user_target_xcconfig = { 
+  s.user_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'GENERATE_INFOPLIST_FILE' => 'YES'
   }
-  
+
 end
