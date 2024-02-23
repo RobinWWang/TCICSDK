@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) UInt32 classId;                                                   // 课程ID,必传
 @property (nonatomic, strong, nullable) NSDictionary<NSString *, NSString *> *customParams;     // 自定义参数: 内部会自动将customParams内容接拼到query串, key-value均为NSString类型
 @property (nonatomic, strong, nullable) NSDictionary *jsParams;
+/// iOS16.4后，默认不可以DEBUG webview，若需要，则需将enableWebDebug设置为YES
+@property (nonatomic, assign) BOOL enableWebDebug;
 /**
  * 简化版接入方式，传入sign(上述关键字段userId/schoolId/classId/token的加密串)，内部会帮解析成TCICClassConfig;
  * 如sign不合法，会返回nil

@@ -147,6 +147,7 @@
 		roomConfig.token = "test_token";
 		roomConfig.classId = 123454;
 		roomConfig.schoolId = xxxxx;
+		roomConfig.enableWebDebug = YES; // 开启webdebug
 		    
 		// 如何更新测试地址：详见注意事项2
 		//     [roomConfig setValue:@"http://xx/yy/index.html" forKey:@"htmlUrl"];
