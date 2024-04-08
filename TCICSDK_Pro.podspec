@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.dependency 'YYModel'
   s.dependency 'Bugly'
   s.dependency 'TIWLogger_iOS', '1.0.1.73'
-  s.dependency 'TIWCache_iOS', '2.0.0.132'
+  s.dependency 'TIWCache_iOS'
   s.dependency 'TXLiteAVSDK_Professional'
 
   s.pod_target_xcconfig = {
