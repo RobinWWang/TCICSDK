@@ -9,8 +9,8 @@
 // TCICSDKGitCommitID : <:TCICSDKGitCommitID:>
 
 #import <UIKit/UIKit.h>
-#import "TCICClassConfig.h"
-#import "TCICCustomDef.h"
+#import <TCICSDK/TCICClassConfig.h>
+#import <TCICSDK/TCICCustomDef.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
