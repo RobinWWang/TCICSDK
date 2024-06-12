@@ -28,11 +28,6 @@ extern NSString *_Nonnull const TCIC_SDK_CommitID;
  */
 + (void)setClassLanuage:(NSString * _Nullable)lang;
 /**
-* 进课堂前预加载环境，以便快速进房;
-* @param env : 环境参数, SDK默认加载正式环境，env 为空表示正式环境, env : test 测试环境; dev 开发环境; pre 预发布环境，其他参数默认为正式环境
-*/
-+ (void)preloadClass:(NSString * _Nullable)env;
-/**
 * 使用H5+Native方式使用，请在主线程中调用
 * @param roomConfig : 打开课堂所需要的配置
 * 如果参数不合法，会返回nil，外部注意处理
