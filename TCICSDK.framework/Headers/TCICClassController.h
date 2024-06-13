@@ -27,6 +27,12 @@ extern NSString *_Nonnull const TCIC_SDK_CommitID;
  * @param lang : 只支持两种zh/en，填其他无效。底层默认为zh;
  */
 + (void)setClassLanuage:(NSString * _Nullable)lang;
+
+/**
+ * 进课堂前预加载环境，以便快速进房;
+ */
++ (void)preloadClass;
+
 /**
 * 使用H5+Native方式使用，请在主线程中调用
 * @param roomConfig : 打开课堂所需要的配置
