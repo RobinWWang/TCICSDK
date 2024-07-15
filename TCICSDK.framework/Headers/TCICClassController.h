@@ -24,9 +24,23 @@ extern NSString *_Nonnull const TCIC_SDK_CommitID;
 - (instancetype)init __attribute__((unavailable("Use +classRoomWithConfig: instead")));
 /**
  * 调测型接口：设置本地课堂语言
- * @param lang : 只支持两种zh/en，填其他无效。底层默认为zh;
+ * @param lang 语言类型
  */
 + (void)setClassLanuage:(NSString * _Nullable)lang;
+
+/**
+ * 更换课堂主域名
+ * @param domain 域名地址，若host为nil，则使用默认域名: class.qcloudclass.com
+ * @return 是否设置成功
+ */
++ (BOOL)setDomain:(NSString * _Nullable)domain;
+
+/**
+ * 更换课堂H5Version
+ * @param h5Version 域名地址，若h5Version为nil则使用默认版本号:latest
+ * @return 是否设置成功
+ */
++ (BOOL)setH5Version:(NSString *)h5Version;
 
 /**
  * 进课堂前预加载环境，以便快速进房;
