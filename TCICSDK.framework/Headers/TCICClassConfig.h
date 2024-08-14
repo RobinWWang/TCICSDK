@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 当前config是否有效，主要检查参数userId,token是否为空串,以及schoolId >0, classId>0,
 // 以及customParams中是否包含有冲突字段
-- (BOOL)isValied;
+- (BOOL)isValid;
 
 @end
 
